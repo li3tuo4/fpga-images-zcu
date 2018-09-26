@@ -1,6 +1,6 @@
 # fpga-images-zcu102
 
-First, preparing the SD card (https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_1/ug1157-petalinux-tools-command-line-guide.pdf)
+First, prepare the SD card (https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_1/ug1157-petalinux-tools-command-line-guide.pdf)
 
 An SD memory card with at least 4 GB of storage space. It is recommended to use a
 card with speed-grade 6 or higher to achieve optimal file transfer performance.
@@ -17,7 +17,7 @@ contain the bootloader, devicetree and kernel images. Label this partition as BO
 remaining space on the SD card. This partition will store the system root filesystem.
 Label this partition as rootfs.
 
-Second, copy image files to SD card partitions.
+Second, copy image files to SD card partitions (make load-sd).
 
 1. Copy BOOT.BIN and image.ub to BOOT partition of SD card. The image.ub file will
 have device tree and kernel image files.
